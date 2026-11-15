@@ -6,6 +6,7 @@ var map = null;       // the MapLibre map
 var current = 0;      // index of the date being shown
 var timer = null;     // setInterval handle while playing
 var PLAY_MS = 1000;   // time per frame while playing
+var FRAME_OPACITY = 0.82; // presentation-only: keep the basemap visible beneath the data
 var cube = null;      // contents of data/cube.json (values in cm for every date)
 var chart = null;     // the Chart.js chart
 var marker = null;    // the pin on the map
