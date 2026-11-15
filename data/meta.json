@@ -1,11 +1,11 @@
 {
   "is_dummy": false,
-  "title": "Quetta valley: relative ground movement seen by NISAR",
+  "title": "Quetta Valley: relative LOS change observed by NISAR",
   "units": "cm",
-  "quantity": "Relative line-of-sight (LOS) change since 2026-06-20, referenced to the regional median of each pair",
+  "quantity": "Cumulative relative line-of-sight (LOS) change since 2026-06-20; each interferogram pair referenced to the regional median",
   "bounds": {
     "west": 66.8,
-    "south": 30.0,
+    "south": 30,
     "east": 67.2,
     "north": 30.35
   },
@@ -34,8 +34,8 @@
     "data/frames/2026-10-18.png"
   ],
   "colormap": {
-    "vmin": -6.0,
-    "vmax": 6.0,
+    "vmin": -6,
+    "vmax": 6,
     "legend_stops": [
       "#b2182b",
       "#f7f7f7",
@@ -53,6 +53,7 @@
     "Pixels with coherence <= 0.5 or no connected component in any pair are masked.",
     "Ionospheric phase screen subtracted. Troposphere and solid Earth tide corrections NOT applied.",
     "Each pair referenced to the median of valid pixels in the Quetta box, not to a single stable point.",
-    "LOS displacement: sign convention not yet confirmed. Noise level of 2-3 cm exists in apparently stable areas."
+    "LOS displacement: sign convention not yet confirmed. Noise level of 2-3 cm exists in apparently stable areas.",
+    "Exploratory low-variability reference candidates were fragmented; no independently validated stable reference area was established."
   ]
 }
