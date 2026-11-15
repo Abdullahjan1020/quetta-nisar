@@ -168,7 +168,7 @@ function showFrame(i) {
   current = i;
   for (var k = 0; k < meta.frames.length; k++) {
     if (map.getLayer('frame-' + k)) {
-      map.setPaintProperty('frame-' + k, 'raster-opacity', k === i ? 1 : 0);
+      map.setPaintProperty('frame-' + k, 'raster-opacity', k === i ? FRAME_OPACITY : 0);
     }
   }
   sliderEl.value = i;
