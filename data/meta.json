@@ -1,0 +1,58 @@
+{
+  "is_dummy": false,
+  "title": "Quetta valley: relative ground movement seen by NISAR",
+  "units": "cm",
+  "quantity": "Relative line-of-sight (LOS) change since 2026-06-20, referenced to the regional median of each pair",
+  "bounds": {
+    "west": 66.8,
+    "south": 30.0,
+    "east": 67.2,
+    "north": 30.35
+  },
+  "dates": [
+    "2026-06-20",
+    "2026-07-02",
+    "2026-07-14",
+    "2026-07-26",
+    "2026-08-19",
+    "2026-08-31",
+    "2026-09-12",
+    "2026-09-24",
+    "2026-10-06",
+    "2026-10-18"
+  ],
+  "frames": [
+    "data/frames/2026-06-20.png",
+    "data/frames/2026-07-02.png",
+    "data/frames/2026-07-14.png",
+    "data/frames/2026-07-26.png",
+    "data/frames/2026-08-19.png",
+    "data/frames/2026-08-31.png",
+    "data/frames/2026-09-12.png",
+    "data/frames/2026-09-24.png",
+    "data/frames/2026-10-06.png",
+    "data/frames/2026-10-18.png"
+  ],
+  "colormap": {
+    "vmin": -6.0,
+    "vmax": 6.0,
+    "legend_stops": [
+      "#b2182b",
+      "#f7f7f7",
+      "#2166ac"
+    ]
+  },
+  "reference_point": null,
+  "grid": {
+    "rows": 160,
+    "cols": 160
+  },
+  "notes": [
+    "NISAR L2 GUNW, Provisional quality. Track 92, Frame 73, descending, L-band HH.",
+    "9 consecutive interferogram pairs chained (12-day, one 24-day gap pair) from 2026-06-20 to 2026-10-18.",
+    "Pixels with coherence <= 0.5 or no connected component in any pair are masked.",
+    "Ionospheric phase screen subtracted. Troposphere and solid Earth tide corrections NOT applied.",
+    "Each pair referenced to the median of valid pixels in the Quetta box, not to a single stable point.",
+    "LOS displacement: sign convention not yet confirmed. Noise level of 2-3 cm exists in apparently stable areas."
+  ]
+}
