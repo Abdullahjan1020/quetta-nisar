@@ -234,7 +234,7 @@ function onMapClick(e) {
     chartInfoEl.textContent = 'No reliable data here (these pixels were masked as too noisy). Try a nearby spot.';
     return;
   }
-  chartInfoEl.textContent = 'Relative change in cm, average of ' + result.count + ' nearby pixels (about 240 m each). Differences under 2\u20133 cm are within the noise.';
+  chartInfoEl.textContent = 'Relative LOS change (cm), averaged across ' + result.count + ' valid nearby grid cells (about 240 m per cell). Changes under 2\u20133 cm may be within the noise.';
   chartBoxEl.hidden = false;
   drawChart(result.values);
 }
