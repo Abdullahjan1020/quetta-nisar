@@ -1,3 +1,6 @@
+**Live app:**
+https://abdullahjan1020.github.io/quetta-nisar/
+
 # Quetta Valley Through NISAR
 
 An interactive map exploring **relative radar line-of-sight (LOS) change** across the Quetta Valley using provisional NISAR L-band observations from 20 June to 18 October 2026.
@@ -5,10 +8,6 @@ An interactive map exploring **relative radar line-of-sight (LOS) change** acros
 The dashboard lets you step through the observation dates, animate the sequence, and inspect a local time series by selecting a point on the map.
 
 > **Important:** This is an exploratory analysis of provisional data. The displayed values are relative LOS changes, not confirmed vertical subsidence or uplift. The sign convention has not been independently confirmed, and the apparent signal is comparable to the estimated 2–3 cm noise level.
-
-## Open the dashboard
-
-If GitHub Pages is enabled for this repository, open the published site from the repository's **About** section. Otherwise, run it locally using the steps below.
 
 ## Run locally
 
