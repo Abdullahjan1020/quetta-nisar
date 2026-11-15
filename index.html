@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quetta valley seen by NISAR radar</title>
+  <title>Quetta Valley | Relative LOS Change — NISAR</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 
   <section id="panel" aria-label="Date controls">
     <h1>Quetta valley</h1>
-    <p class="sub">Relative change in radar line of sight, NISAR L-band</p>
+    <p class="sub">Relative line-of-sight (LOS) change · NISAR L-band</p>
 
     <div class="date" id="date">&nbsp;</div>
     <p class="dayinfo" id="dayinfo">&nbsp;</p>
@@ -31,7 +31,7 @@
       <div class="legend-labels"><span id="legendMin"></span><span>0</span><span id="legendMax"></span></div>
     </div>
 
-    <p class="caption">Provisional NISAR data. Values are relative to 20 Jun and include roughly 2&ndash;3&nbsp;cm of noise. The sign convention is not confirmed yet, so colors show change, not up or down.</p>
+    <p class="caption">Provisional data · Relative LOS change since 20 Jun 2026 · Approx. 2&ndash;3&nbsp;cm noise. Color direction is not yet confirmed.</p>
     <p class="error" id="error" hidden></p>
   </section>
 
@@ -44,17 +44,17 @@
   <dialog id="about" aria-labelledby="aboutTitle">
     <h2 id="aboutTitle">What am I seeing?</h2>
     <p>NISAR is a radar satellite built by NASA and ISRO. Radar works at night and through clouds, so it can measure the same ground again and again.</p>
-    <p>Each date on the slider shows how much the distance between the satellite and the ground has changed since 20 Jun 2026. The distance is measured along the satellite&rsquo;s line of sight, and a change of a few centimeters is a small fraction of the radar wavelength (about 24&nbsp;cm).</p>
+    <p>Each date shows cumulative relative line-of-sight (LOS) change since 20 Jun 2026. LOS is the satellite viewing direction, not a direct measurement of vertical movement. The radar wavelength is about 24&nbsp;cm.</p>
     <ul>
       <li><strong>Red and blue</strong> mean change in opposite directions. Which one is toward the satellite is not confirmed yet.</li>
-      <li><strong>Transparent areas</strong> have no reliable measurement, or almost no change.</li>
+      <li><strong>Transparent areas</strong> are masked because they do not have a reliable measurement. Transparency does not mean zero change.</li>
       <li><strong>Click the map</strong> to see how one spot changed over time.</li>
     </ul>
-    <p>This map does <strong>not</strong> prove that the ground is sinking or rising. It shows where a signal might be worth a closer look.</p>
+    <p>This map does <strong>not</strong> prove that the ground is sinking or rising. The apparent signal is comparable to the estimated noise and needs independent validation.</p>
 
     <h2>Method and limitations</h2>
     <p><strong>Data.</strong> NISAR L2 GUNW (Provisional), track 92, frame 73, descending, L-band, HH. Nine consecutive pairs from 20 Jun to 18 Oct 2026, downloaded from the ASF DAAC. One pair spans 24 days, the others 12.</p>
-    <p><strong>Steps.</strong> Pixels with coherence of 0.5 or less, or outside the main unwrapped area, are masked. The estimated ionospheric phase is subtracted. Each pair is shifted by the median of its valid pixels. Phase is converted to centimeters (about 1.94&nbsp;cm per radian) and the pairs are added up over time.</p>
+    <p><strong>Steps.</strong> Pixels with coherence of 0.5 or less, or outside the main unwrapped area, are masked. The estimated ionospheric phase is subtracted. Each pair is referenced to the median of its valid pixels within the Quetta study region. Phase is converted to centimeters (about 1.94&nbsp;cm per radian) and the pairs are added up over time.</p>
     <ul>
       <li>The data is Provisional and not fully validated.</li>
       <li>Roughly 2&ndash;3&nbsp;cm of noise remains in areas that are probably stable.</li>
@@ -62,7 +62,7 @@
       <li>The reference is a regional median, not a confirmed stable point.</li>
       <li>Only about 57% of pixels survive the masks by the last date.</li>
       <li>One satellite track gives line-of-sight change only, not vertical or horizontal movement.</li>
-      <li>Four months is a short record.</li>
+      <li>Four months is a short record, and no independently validated stable reference area was established.</li>
     </ul>
     <button id="aboutClose" type="button">Close</button>
   </dialog>
